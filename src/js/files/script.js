@@ -44,6 +44,7 @@ let incr = 10,
 
 
 
+
         // Создание Вопросов  и Ответов
 // const answers = [];
 // answers[0] = prompt('Name', '');
