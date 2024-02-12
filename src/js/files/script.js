@@ -2,37 +2,27 @@
 // import { isMobile } from "./functions.js";
 // import { formsModules } from "./forms/forms.js";
 
-
-
 // "use strict";
 // let boxBox = 10;
 // const box = ['box.jpg',  'box-2.jpg', 'box-3.jpg', 'box-4.jpg', [boxBox = 1]];
 // console.log(box[4]);
 
-
 let incr = 10,
     decr = 10;
 
-    console.log(incr++);
-    console.log(decr--);
+console.log(incr++);
+console.log(decr--);
 
-    console.log(5%2);
-    console.log(2*4 == '8');
+console.log(5 % 2);
+console.log(2 * 4 == "8");
 
-    const isCheked = true,
-            isClose = false;
-            console.log(isCheked && isClose);
-            
-            console.log(isCheked || isClose);
+const isCheked = true,
+    isClose = false;
+console.log(isCheked && isClose);
 
-            console.log(!isCheked || isClose);
+console.log(isCheked || isClose);
 
-            
-    
-    
-
-
-
+console.log(!isCheked || isClose);
 
 // const result = confirm("Шото Нада?")
 // console.log(result);
@@ -40,18 +30,12 @@ let incr = 10,
 // const answer = prompt("Сколько вам Лет?", "18");
 // console.log(answer);
 
-
-
-
-
-
-        // Создание Вопросов  и Ответов
+// Создание Вопросов  и Ответов
 // const answers = [];
 // answers[0] = prompt('Name', '');
 // answers[1] = prompt('Age', '');
 // answers[2] = prompt('Sex', '');
 // console.log(typeof(answers));
-
 
 // const numbefOfFilms = +prompt('Сколько фильмов вы уже просмотрели', '');
 // const personalMovieDB = {
@@ -70,7 +54,6 @@ let incr = 10,
 //         personalMovieDB.movies[a] = b;
 //         personalMovieDB.movies[c] = d;
 //         console.log(personalMovieDB);
-        
 
 // const num = 50;
 
@@ -86,18 +69,17 @@ let incr = 10,
 //                 console.log('Верно');
 //         break;
 
-//         default: 
+//         default:
 //         console.log('Не в этот раз');
 //         break;
 // }
-
 
 let num = 50;
 
 // while (num <= 55) {
 //         console.log(num);
 //         num++;
-        
+
 // }
 
 // do {
@@ -107,7 +89,43 @@ let num = 50;
 
 // while (num <= 55);
 
-for (let i = 1; i < 8; i++) {
-        console.log(num);
-        num++;
+// for (let i = 1; i < 8; i++) {
+//         console.log(num);
+//         num++;
+// }
+
+const numbefOfFilms = +prompt("Сколько фильмов вы уже просмотрели", "");
+const personalMovieDB = {
+    count: numbefOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false,
+};
+
+for (let i = 0; i < 2; i++) {
+    const a = prompt("Один из последних просмотренных фильмов?", ""),
+        b = prompt("Какой был рейтинг этого фильма?", "");
+
+    if (a != null && b != null && a != "" && b != "" && a.langth < 50) {
+        personalMovieDB.movies[a] = b;
+        console.log("done");
+    } else {
+        console.log("error");
+        i--;
+    }
 }
+
+if (personalMovieDB.count < 10) {
+        console.log('Очень мало фильмов');
+} else if (personalMovieDB.count >= 10 &&  personalMovieDB.count < 30) {
+        console.log('Мощно конечно');
+ } else if (personalMovieDB.count >= 30) {
+        console.log('Дохрена');
+ } else {
+        console.log('Шото не так');
+        
+ }
+
+
+console.log(personalMovieDB);
