@@ -53,22 +53,61 @@ let incr = 10,
 // console.log(typeof(answers));
 
 
-const numbefOfFilms = +prompt('Сколько фильмов вы уже просмотрели', '');
-const personalMovieDB = {
-        count: numbefOfFilms,
-        movies: {},
-        actors: {},
-        genres: [],
-        privat: false
-};
+// const numbefOfFilms = +prompt('Сколько фильмов вы уже просмотрели', '');
+// const personalMovieDB = {
+//         count: numbefOfFilms,
+//         movies: {},
+//         actors: {},
+//         genres: [],
+//         privat: false
+// };
 
-const a = prompt('Один из последних просмотренных фильмов?', ''),
-        b = prompt('Какой был рейтинг этого фильма?', ''),
-        c = prompt('Один из последних просмотренных фильмов?', ''),
-        d = prompt('Какой был рейтинг этого фильма?', '');
+// const a = prompt('Один из последних просмотренных фильмов?', ''),
+//         b = prompt('Какой был рейтинг этого фильма?', ''),
+//         c = prompt('Один из последних просмотренных фильмов?', ''),
+//         d = prompt('Какой был рейтинг этого фильма?', '');
 
-        personalMovieDB.movies[a] = b;
-        personalMovieDB.movies[c] = d;
-        console.log(personalMovieDB);
+//         personalMovieDB.movies[a] = b;
+//         personalMovieDB.movies[c] = d;
+//         console.log(personalMovieDB);
         
 
+// const num = 50;
+
+// switch (num) {
+//         case 49:
+//                 console.log('Неверно');
+//         break;
+
+//         case 100:
+//                 console.log('Неверно');
+//         break;
+//          case 50:
+//                 console.log('Верно');
+//         break;
+
+//         default: 
+//         console.log('Не в этот раз');
+//         break;
+// }
+
+
+let num = 50;
+
+// while (num <= 55) {
+//         console.log(num);
+//         num++;
+        
+// }
+
+// do {
+//         console.log(num);
+//         num++;
+// }
+
+// while (num <= 55);
+
+for (let i = 1; i < 8; i++) {
+        console.log(num);
+        num++;
+}
