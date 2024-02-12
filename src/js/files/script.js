@@ -196,4 +196,52 @@ console.log(num);
 
 
 
+const str  = 'hello';
+const arr = [1, 2, 4]
+
+console.log(str.toUpperCase());
+console.log(str.toLowerCase());
+console.log(str);
+
+
+
+
+const fruit = "some Fruit";
+
+console.log(fruit.indexOf("q"));
+
+const logg = "darou bro";
+console.log(logg.slice(6, 9));
+
+const tip = "Шо нада";
+console.log(tip.slice(0, 999));
+const pip = "Шо нада";
+console.log(pip.slice(3));
+const pip3 = "Шо нада";
+console.log(pip3.slice(-3));
+
+
+
+const subString = "Шо нада";
+console.log(subString.substring(3));
+
+const sus = "Шо нада";
+console.log(sus.substr(3, 4));
+
+const number = 12.4;
+console.log(Math.round(number));
+
+
+
+
+
+
+const test = "12.2px"
+// console.log(parseInt(test)); // возвращает только целую часть числа
+console.log(parseFloat(test)); // возвращает только дробную часть числа
+
+
+
+
+
 
